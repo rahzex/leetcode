@@ -10,6 +10,7 @@ public class RemoveDuplicateSortedLinkedList {
         ListNode currentNode = head;
 
         while(currentNode != null) {
+            // if we are at end of list
             if (currentNode.next == null) {
                 break;
             }

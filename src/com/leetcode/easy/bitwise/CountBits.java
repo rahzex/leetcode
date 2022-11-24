@@ -2,6 +2,7 @@ package com.leetcode.easy.bitwise;
 
 // https://leetcode.com/problems/counting-bits
 // https://www.youtube.com/watch?v=awxaRgUB4Kw
+// https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/
 
 public class CountBits {
 
