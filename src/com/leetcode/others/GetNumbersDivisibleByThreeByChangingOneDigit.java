@@ -4,7 +4,6 @@ public class GetNumbersDivisibleByThreeByChangingOneDigit {
     /**
      * You are given a string S, consisting of N digits, that represents a number. You can change at most one digit in the string to any other digit. How many different numbers divisible by 3 can be obtained in this way?
      * Write a function:
-     * class Solution { public int solution (String S); }
      * that, given a string S of length N, returns an integer specifying how many numbers divisible by 3 can be obtained with at most one change of a digit.
      * Examples:
      * 1. Given S = "23", the function should return 7. All numbers divisible by 3 that can be obtained after at
