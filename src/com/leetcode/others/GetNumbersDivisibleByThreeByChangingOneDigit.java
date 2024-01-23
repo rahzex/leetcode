@@ -23,15 +23,17 @@ public class GetNumbersDivisibleByThreeByChangingOneDigit {
         int num = Integer.parseInt(number);
         char originalValueOfIndex;
         int countNumbersDivisibleByThree = 0;
-        if (num%3 == 0 && num != 0)
+        if (num%3 == 0 && num != 0) {
             countNumbersDivisibleByThree++;
+        }
         for (int index = 0; index < number.length(); index++) {
             originalValueOfIndex = possibleMatchBuilder.charAt(index);
             for (int n = 48; n <= 57; n++) {
                 possibleMatchBuilder.setCharAt(index, (char) n);
                 int possibleMatch = Integer.parseInt(possibleMatchBuilder.toString());
-                if (possibleMatch%3 == 0 && possibleMatch > 0 && possibleMatch != num)
+                if (possibleMatch%3 == 0 && possibleMatch > 0 && possibleMatch != num) {
                     countNumbersDivisibleByThree++;
+                }
             }
             possibleMatchBuilder.setCharAt(index, originalValueOfIndex);
         }
