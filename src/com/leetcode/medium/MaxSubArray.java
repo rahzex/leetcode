@@ -13,8 +13,13 @@ public class MaxSubArray {
         int currentMax = 0;
         for (int num : nums) {
             currentMax = currentMax + num;
-
-            if (currentMax < num)
+            /**
+             If the current sum currentMax becomes negative,
+             it indicates that including the current element in the subarray would reduce the overall sum.
+             In such cases, we reset currentMax to 0.
+             This effectively discards the current subarray and allows us to start a fresh subarray from the next element.
+            */
+             if (currentMax < num)
                 currentMax = num;
 
             if (currentMax > globalMax)
