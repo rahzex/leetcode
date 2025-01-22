@@ -14,4 +14,23 @@ public class MoveZeros {
             nums[correctPointer] = 0;
         }
     }
+
+    public void moveZeroesIntuitive(int[] arr) {
+        for (int i = 0, j = 1; j < arr.length;) {
+            // go to next index if i is non-zero
+            if (arr[i] != 0) {
+                i++; j++;
+            }
+            else {
+                // if j is non-zero then swap with j and move to next positions
+                if (arr[j] != 0) {
+                    arr[i] = arr[j];
+                    arr[j] = 0;
+                    i++; j++;
+                }
+                else
+                    j++; // if j is zero then move to next
+            }
+        }
+    }
 }
