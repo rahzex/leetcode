@@ -2,11 +2,16 @@ package com.leetcode.medium;
 
 class NextPermutation {
     /**
+     *  [2 1 5 3 1 0]
      *  Intuition:
      *  Find breaking point where arr[i] < arr[i+1]
-     *  find the smallest value from arr[i+1] to arr[n] which is greater than a[i].
-     *  place the smallest value at arr[i]
-     *  fill remaining places with values in increasing order
+     *  [2 1 | 5 4 3 2 0]
+     *  find the smallest value from arr[i+1] to arr[n] which is greater than a[i]
+     *  [...5 4 3 {2} 0]
+     *  swap the smallest value at arr[i],
+     *  [2 {2} 5 4 3 {1} 0]
+     *  fill remaining places with values in increasing order i.e. reverse
+     *  [2 2 {0 1 3 4 5}]
      *  TC: O(n)
      *  SC: O(1)
      */
