@@ -1,6 +1,8 @@
 package com.leetcode.medium;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SortColors {
 
@@ -31,6 +33,8 @@ public class SortColors {
     }
 
     public static void main(String[] args) {
+        Map<Integer, Integer> dd = new HashMap<>();
+        int d = 0;
         //Example 1:
         //
         //Input: nums = [2,0,2,1,1,0]

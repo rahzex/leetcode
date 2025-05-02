@@ -4,7 +4,6 @@ public class MaxSubArray {
 
     // https://leetcode.com/problems/maximum-subarray
 
-
     // Kadane's Algorithm https://www.youtube.com/watch?v=86CQq3pKSUw
 
     public static int maxSubArrayOptimal(int[] nums) {
